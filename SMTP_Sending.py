@@ -2,6 +2,7 @@ import random
 import smtplib
 from email.message import EmailMessage
 import os
+from time import sleep
 
 # --- CONFIGURARE DATE ---
 SENDER_EMAIL = os.environ.get("SENDER_EMAIL").strip()
@@ -110,8 +111,11 @@ try:
     print("Autentificare...")
     server.login(SENDER_EMAIL, SENDER_PASSWORD)
     server.send_message(msg_1)
+    sleep(5)
     server.send_message(msg_2)
+    sleep(5)
     server.send_message(msg_3)
+    sleep(5)
     server.send_message(msg_4)
     server.quit()
     print("✅ SUCCES! Email-ul a fost trimis.")
