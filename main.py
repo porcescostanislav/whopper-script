@@ -20,10 +20,7 @@ try:
     server.starttls()
     print("Autentificare...")
     server.login(SENDER_EMAIL, SENDER_PASSWORD)
-
-    for i in range(0,1):
-        sleep(5)
-        server.send_message(msg)
+    server.send_message(msg)
     server.quit()
 
     print("✅ SUCCES! Email-ul a fost trimis.")
