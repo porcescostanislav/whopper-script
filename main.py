@@ -13,7 +13,7 @@ msg = EmailMessage()
 msg['Subject'] = "👑 The King's Morning Feast! Only at WhopperKing! 👑"
 msg['From'] = SENDER_EMAIL
 msg['To'] = RECEIVER_EMAIL
-msg.set_content("Whopper, Whopper, Whopper! 🍔\n Start your day like a King, Stanislav, with a massive Triple Bacon Cheese Whopper paired with our famous large fries and an ice-cold drink! 🥓🍟🥤 \nClaim this royal feast now and we’ll even throw in a free side of golden onion rings if you order in the next 20 minutes! 👑✨ \nDon't wait—have it your way right away! 🏃‍♂️💨")
+msg.set_content("Whopper, Whopper, Whopper! 🍔\n Start your day like a King, Marius, with a massive Triple Bacon Cheese Whopper paired with our famous large fries and an ice-cold drink! 🥓🍟🥤 \nClaim this royal feast now and we’ll even throw in a free side of golden onion rings if you order in the next 20 minutes! 👑✨ \nDon't wait—have it your way right away! 🏃‍♂️💨")
 # --- TRIMITEREA ---
 try:
     server = smtplib.SMTP('smtp.gmail.com', 587)
